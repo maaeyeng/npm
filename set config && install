@@ -1,0 +1,35 @@
+
+
+#test on mac pro iOS v.10.09
+
+
+
+#set config proxy protocal http, https
+
+npm set config http-proxy
+npm set confg https-proxy
+
+
+npm config set proxy http://localhost:8080
+
+npm config set https-proxy http://localhost:8080
+
+
+#add set registry npm 
+
+npm config set registry "http://registry.npmjs.org"
+npm config set strict-ssl false
+
+#get proxy 
+
+npm config get proxy
+
+npm config get https-proxy
+
+
+
+#fix npm command
+npm config get proxy
+npm config rm proxy
+npm config rm https-proxy
+
